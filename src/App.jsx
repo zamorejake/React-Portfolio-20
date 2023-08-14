@@ -1,7 +1,5 @@
-//import { useState } from 'react'
 import './App.css'
-import { BrowserRouter, Route, Routes} from 'react-router-dom';
-import Header from './assets/components/Header'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AboutMe from './assets/components/AboutMe';
 import Portfolio from './assets/components/Portfolio';
 import Contact from './assets/components/Contact';
