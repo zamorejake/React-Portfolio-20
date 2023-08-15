@@ -14,7 +14,9 @@ const Contact = () => {
       [name]: value,
     }));
   };
-
+  const blockSubmit = (e) => {
+    e.preventDefault(); 
+  }
   return (
     <>
       <Header con="bg-gray-500" />
@@ -22,7 +24,7 @@ const Contact = () => {
         <h1 className="text-gray-400 text-bold font-bold text-5xl pt-12">
           Contact Me
         </h1>
-        <form>
+        <form onSubmit={blockSubmit}>
           <div className="pt-5">
             <label className="px-5 text-4xl">Name:</label>
             <input
