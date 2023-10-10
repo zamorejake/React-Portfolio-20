@@ -1,5 +1,8 @@
+import React, { useState } from 'react';
+import GranimBackground from './assets/components/Granim';
 import './App.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+//import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Header from './assets/components/Header';
 import AboutMe from './assets/components/AboutMe';
 import Portfolio from './assets/components/Portfolio';
 import Contact from './assets/components/Contact';
@@ -7,20 +10,21 @@ import Resume from './assets/components/Resume';
 import Footer from './assets/components/Footer';
 
 function App() {
- 
+  const [activeState, setActiveState] = useState('default-state');
+
+  const handleStateChange = (newState) => {
+    setActiveState(newState);
+  };
 
   return (
     <>
-      <BrowserRouter>
-      <Routes>
-      <Route path="/" element={<AboutMe />} />
-        <Route path="/AboutMe" element={<AboutMe />} />
-        <Route path="/Portfolio" element={<Portfolio />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/Resume" element={<Resume />} />
-      </Routes>
-    </BrowserRouter>
-      <Footer />
+      <GranimBackground activeState={activeState} onStateChange={handleStateChange} />
+      <Header onSectionClick={handleStateChange} />
+      <AboutMe />
+      <Portfolio />
+      <Contact />
+      <Resume />
+      {/*<Footer />*/}
     </>
   )
 }

@@ -1,16 +1,49 @@
-import { Link } from 'react-router-dom';
-const Header = ({ about, port, con, res }) => {
+const Header = ({ onSectionClick }) => {
   return (
-    <header className="flex items-center justify-between h-24 px-5">
+    <header className="fixed top-0 w-full h-24 px-5 flex items-center justify-between z-10">
       <div>
-      <h1 className="text-6xl text-white font-bold">Jake Zam</h1>
+        <a href="#">
+          <img className="pt-10" src="logo.png" alt="Github logo" width="300" height="300"/>
+        </a>
       </div>
       <div>
         <ul className="flex text-white space-x-4 font-semibold">
-          <Link to="/AboutMe" className={`basis-40 ${about}`}> <li className="hover:font-black">About Me</li></Link>
-          <Link to="/Portfolio" ><li className={`basis-20 hover:font-black ${port}`}>Portfolio</li></Link>
-          <Link to="/Contact" ><li className={`basis-20 hover:font-black ${con}`}>Contact</li></Link>
-          <Link to="/Resume" ><li className={`basis-20 hover:font-black ${res}`}>Resume</li></Link>
+          <li>
+            <a
+              href="#AboutMe"
+              onClick={() => onSectionClick("about-me")}
+              className="hover:font-black"
+            >
+              About Me
+            </a>
+          </li>
+          <li>
+            <a
+              href="#Portfolio"
+              onClick={() => onSectionClick("portfolio")}
+              className="hover:font-black"
+            >
+              Portfolio
+            </a>
+          </li>
+          <li>
+            <a
+              href="#Contact"
+              onClick={() => onSectionClick("contact")}
+              className="hover:font-black"
+            >
+              Contact
+            </a>
+          </li>
+          <li>
+            <a
+              href="#Resume"
+              onClick={() => onSectionClick("resume")}
+              className="hover:font-black"
+            >
+              Resume
+            </a>
+          </li>
         </ul>
       </div>
     </header>

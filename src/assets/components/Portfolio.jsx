@@ -52,16 +52,15 @@ const Portfolio = () => {
 
   return (
     <>
-      <Header port="bg-gray-500" />
-      <body className="h-screen flex flex-col px-1.5 items-center ">
-        <h1 className="text-gray-400 text-bold font-bold text-5xl pt-12">
+      <div id="Portfolio" className="h-screen flex flex-col px-1.5 items-center">
+        <h1 className="text-black text-bold font-bold text-5xl pt-28">
           Portfolio
         </h1>
         <div className="grid grid-cols-3 pt-2 gap-10">
           {projectData.map((projectData, index) => (
             <div
               key={index}
-              className="relative pt-28"
+              className="relative pt-14"
               onMouseLeave={handleLeave}
               onMouseEnter={() => setHovered(index)}
             >
@@ -103,7 +102,7 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
-      </body>
+      </div>
     </>
   );
 };
