@@ -64,7 +64,7 @@ const Portfolio = () => {
               onMouseLeave={handleLeave}
               onMouseEnter={() => setHovered(index)}
             >
-              <h3 className="absolute text-4xl font-extrabold text-rose-600 px-1.5">
+              <h3 className="absolute text-4xl font-extrabold text-white px-1.5 z-10 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
                 {projectData.title}
               </h3>
               <img
@@ -72,9 +72,10 @@ const Portfolio = () => {
                 alt={`Project ${index}`}
                 width="300"
                 height="300"
+                className="hover:scale-110 rounded-lg shadow-lg hover:brightness-50"
               />
               {hovered === index && (
-                <div className="absolute top-0 left-0 pt-40">
+                <div className="absolute top-0 left-0 pt-32">
                   <a href={projectData.github} target="_blank" rel="noreferrer">
                     <img
                       src="github2.png"

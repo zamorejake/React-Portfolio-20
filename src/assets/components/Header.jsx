@@ -11,7 +11,7 @@ const Header = ({ onSectionClick }) => {
           <li>
             <a
               href="#AboutMe"
-              onClick={() => onSectionClick("about-me")}
+              onClick={() => onSectionClick("default-state")}
               className="hover:font-black"
             >
               About Me
