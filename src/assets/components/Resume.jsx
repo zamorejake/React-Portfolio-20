@@ -1,10 +1,8 @@
-import Header from "./Header";
 const Resume = () => {
   return (
     <>
-      <Header res="bg-gray-500 " />
-      <body className="h-screen flex flex-col px-1.5 items-center ">
-        <h1 className="text-gray-400 text-bold font-bold text-5xl pt-12">
+      <div id="Resume" className="h-screen flex flex-col px-1.5 items-center ">
+        <h1 className="text-black text-bold font-bold text-5xl pt-28 drop-shadow-[0_2px_2px_rgba(255,255,255,0.8)]">
           Resume
         </h1>
         <a href="Resume.pdf" download>
@@ -21,7 +19,7 @@ const Resume = () => {
           <li>React</li>
           <li>Node.js</li>
         </ul>
-      </body>
+      </div>
     </>
   );
 };
