@@ -1,0 +1,4 @@
+lol = 123
+text = "text"
+
+print(lol+text)

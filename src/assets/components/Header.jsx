@@ -1,6 +1,6 @@
 const Header = ({ onSectionClick }) => {
   return (
-    <header className="fixed top-0 w-full h-24 px-5 flex items-center justify-between z-10">
+    <header className="fixed top-0 w-full h-24 px-5 flex items-center justify-between z-10 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
       <div>
         <a href="#">
           <img className="pt-10" src="logo.png" alt="Github logo" width="300" height="300"/>
@@ -11,7 +11,7 @@ const Header = ({ onSectionClick }) => {
           <li>
             <a
               href="#AboutMe"
-              onClick={() => onSectionClick("default-state")}
+              onClick={() => onSectionClick("about-me")}
               className="hover:font-black"
             >
               About Me
