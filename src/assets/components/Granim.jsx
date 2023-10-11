@@ -18,40 +18,32 @@ const GranimBackground = ({ activeState, onStateChange }) => {
               ['#FF4E50', '#F9D423'],  
               ['#9D50BB', '#6E48AA'],  
             ],
-            transitionSpeed: 10000,
+            transitionSpeed: 2000,
           },
           'about-me': {
             gradients: [
-                ['#ADD100', '#7B920A'],
-                ['#1A2980', '#26D0CE'], 
+              ['#FF4E50', '#F9D423'],  
+              ['#9D50BB', '#6E48AA'],
             ],
             transitionSpeed: 2000,
           },
           'portfolio': {
             gradients: [
               ['#4776E6', '#8E54E9'],  
-              ['#FFA17F', '#00223E'],  
+              ['#0EA5EF', '#4B0FA9'],  
             ],
-            loop: false,
           },
           'contact': {
             gradients: [
-              ['#FFA17F', '#00223E'],
-              ['#9D50BB', '#6E48AA'],
+              ['#4776E6', '#6495ED'],
+              ['#2CD084', '#0D623B'],
             ],
             transitionSpeed: 2000,
           },
           'resume': {
             gradients: [
-              ['#4776E6', '#8E54E9'],
-              ['#FFA17F', '#00223E'],
-            ],
-            transitionSpeed: 2000,
-          },
-          'links': {
-            gradients: [
-              ['#1A2980', '#26D0CE'],
-              ['#ADD100', '#7B920A'],
+              ['#13428D', '#6FA0EE'],
+              ['#6FEEEE', '#056363'],
             ],
             transitionSpeed: 2000,
           },

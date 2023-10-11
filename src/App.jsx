@@ -20,7 +20,7 @@ function App() {
     <>
       <GranimBackground activeState={activeState} onStateChange={handleStateChange} />
       <Header onSectionClick={handleStateChange} />
-      <AboutMe />
+      <AboutMe onSectionClick={handleStateChange}/>
       <Portfolio />
       <Contact />
       <Resume />
