@@ -4,7 +4,7 @@ const AboutMe = ({ onSectionClick }) => {
   return (
     <>
       <div id="AboutMe" className="h-screen flex flex-col px-1.5 items-center">
-        <h1 className="text-black text-bold font-bold text-5xl pt-28 sm:pt-66 lg:pt-28 drop-shadow-[0_2px_2px_rgba(255,255,255,0.8)]">
+        <h1 className="text-black text-bold font-bold text-5xl pt-48 lg:pt-28 drop-shadow-[0_2px_2px_rgba(255,255,255,0.8)]">
           About Me
         </h1>
 
@@ -16,7 +16,7 @@ const AboutMe = ({ onSectionClick }) => {
           onClick={() => onSectionClick("portfolio")}
           className="hover:font-black"
         >
-          <div className="pt-6 items-center px-14 text-3xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          <div className="pt-6 items-center px-14 text-[23px] lg:text-3xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
             <TypeItText />
           </div>
         </a>
