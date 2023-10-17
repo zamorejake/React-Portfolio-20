@@ -64,7 +64,7 @@ const Portfolio = () => {
         id="Portfolio"
         className="h-screen flex flex-col px-1.5 items-center"
       >
-        <h1 className="text-black text-bold font-bold text-5xl pt-28 drop-shadow-[0_2px_2px_rgba(255,255,255,0.8)]">
+        <h1 className="text-black text-bold font-bold text-5xl pt-48 lg:pt-28 drop-shadow-[0_2px_2px_rgba(255,255,255,0.8)]">
           Portfolio
         </h1>
         <a href="Resume.pdf" target="_blank" rel="noreferrer">
