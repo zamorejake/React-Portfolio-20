@@ -68,7 +68,7 @@ const Portfolio = () => {
           Portfolio
         </h1>
         <a href="Resume.pdf" target="_blank" rel="noreferrer">
-          <h2 className="pt-3 pb-3 text-2xl underline font-bold drop-shadow-[0_1px_1px_rgba(255,255,255,0.8)]">
+          <h2 className="pt-3 sm:pb-2 lg: pb-1 text-2xl underline font-bold drop-shadow-[0_1px_1px_rgba(255,255,255,0.8)]">
             Interested in my resume?
           </h2>
         </a>
