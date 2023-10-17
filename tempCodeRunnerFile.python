@@ -1,4 +1,22 @@
-lol = 123
-text = "text"
+def option1():
+    return 330 * 20
+def option2():
+    pay = 1
+    total = 0
+    for day in range(20):
+        total += pay
+        pay *= 1.5
+    return total
 
-print(lol+text)
+opt1 = option1()
+opt1 = round(opt1, 2)
+opt2 = option2()
+opt2 = round(opt2, 2)
+print("Option 1 = $" + str(opt1) + ".")
+print("Option 2 = $" + str(opt2) + ".")
+if opt1 > opt2:
+    print("Option 1 is the better option")
+elif opt1 < opt2:
+    print("Option 2 is the better option.")
+else:
+    print("The two options are equal.")
