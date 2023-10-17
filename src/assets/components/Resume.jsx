@@ -55,7 +55,7 @@ const Resume = () => {
           width="600"
           height="630"
         ></iframe>
-        <h1 className="pt-5 font-bold text-4xl">Technical Skills</h1>
+        <h1 className="text-black text-bold font-bold text-4xl pt-28 drop-shadow-[0_2px_2px_rgba(255,255,255,0.8)]">Technical Skills</h1>
         <div className="grid grid-cols-4 gap-2.5 pb-12">
           {logoData.map((logoData, index) => (
             <div
