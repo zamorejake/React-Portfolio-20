@@ -1,6 +1,6 @@
 // GranimBackground.jsx
-import React, { useEffect, useRef } from 'react';
-import Granim from 'granim';
+import React, { useEffect, useRef } from "react";
+import Granim from "granim";
 
 const GranimBackground = ({ activeState, onStateChange }) => {
   const granimRef = useRef(null);
@@ -8,45 +8,45 @@ const GranimBackground = ({ activeState, onStateChange }) => {
   useEffect(() => {
     const granimInstance = new Granim({
       element: granimRef.current,
-      name: 'interactive-gradient',
-      direction: 'diagonal',
+      name: "interactive-gradient",
+      direction: "diagonal",
       isPausedWhenNotInView: true,
       stateTransitionSpeed: 500,
       states: {
-        'default-state': {
-            gradients: [
-              ['#FF4E50', '#F9D423'],  
-              ['#9D50BB', '#6E48AA'],  
-            ],
-            transitionSpeed: 2000,
-          },
-          'about-me': {
-            gradients: [
-              ['#FF4E50', '#F9D423'],  
-              ['#9D50BB', '#6E48AA'],
-            ],
-            transitionSpeed: 2000,
-          },
-          'portfolio': {
-            gradients: [
-              ['#4776E6', '#8E54E9'],  
-              ['#0EA5EF', '#4B0FA9'],  
-            ],
-          },
-          'contact': {
-            gradients: [
-              ['#4776E6', '#6495ED'],
-              ['#2CD084', '#0D623B'],
-            ],
-            transitionSpeed: 2000,
-          },
-          'resume': {
-            gradients: [
-              ['#13428D', '#6FA0EE'],
-              ['#6FEEEE', '#056363'],
-            ],
-            transitionSpeed: 2000,
-          },
+        "default-state": {
+          gradients: [
+            ["#FF4E50", "#FDDC43"],
+            ["#DA953F", "#F80851"],
+          ],
+          transitionSpeed: 9000,
+        },
+        "about-me": {
+          gradients: [
+            ["#FF4E50", "#F9D423"],
+            ["#9D50BB", "#6E48AA"],
+          ],
+          transitionSpeed: 9000,
+        },
+        portfolio: {
+          gradients: [
+            ["#4776E6", "#8E54E9"],
+            ["#0EA5EF", "#4B0FA9"],
+          ],
+        },
+        contact: {
+          gradients: [
+            ["#4776E6", "#6495ED"],
+            ["#2CD084", "#0D623B"],
+          ],
+          transitionSpeed: 9000,
+        },
+        resume: {
+          gradients: [
+            ["#13428D", "#6FA0EE"],
+            ["#6FEEEE", "#056363"],
+          ],
+          transitionSpeed: 9000,
+        },
       },
       onStateChange: (newState) => {
         onStateChange(newState);
@@ -59,11 +59,11 @@ const GranimBackground = ({ activeState, onStateChange }) => {
   }, [activeState, onStateChange]);
 
   const canvasStyle = {
-    position: 'fixed',
+    position: "fixed",
     top: 0,
     left: 0,
-    width: '100%',
-    height: '100%',
+    width: "100%",
+    height: "100%",
     zIndex: -1,
   };
 
