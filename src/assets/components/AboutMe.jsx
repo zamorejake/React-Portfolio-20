@@ -9,7 +9,7 @@ const AboutMe = ({ onSectionClick }) => {
         </h1>
 
         <div className="flex-shrink-0 pt-5">
-          <img src="pfp2.png" alt="Profile Picture" width="200" height="200" />
+          <img src="pfp.png" alt="Profile Picture" width="200" height="200" />
         </div>
         <a
           href="#Portfolio"
@@ -23,7 +23,7 @@ const AboutMe = ({ onSectionClick }) => {
         <div className="flex justify-center h-screen">
           <p className="text-center text-[23.5px] lg:text-3xl font-bold text-black px-6 max-w-screen-md mx-auto pt-6 px-14 mb-4 sm:mb-8 lg:mb-12 drop-shadow-[0_1.2px_1.2px_rgba(255,255,255.8)]">
             My name is Jake Zamarripa and I'm a web developer based in the KC
-            metro area. I'm passionate about coding and work well in a team
+            metro area. I'm passionate about coding and work well in team
             oriented environments and individually. I am excited to contribute
             my skills and creativity to drive success in future projects!
           </p>

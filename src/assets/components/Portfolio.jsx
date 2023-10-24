@@ -3,10 +3,6 @@ import React, { useState } from "react";
 const Portfolio = () => {
   const [hovered, setHovered] = useState(false);
 
-  const handleEnter = (index) => {
-    setHovered(index);
-  };
-
   const handleLeave = () => {
     setHovered(false);
   };
@@ -17,44 +13,44 @@ const Portfolio = () => {
     {
       image: "restaurant.png",
       title: "Yum's",
-      github: "https://github.com/zamorejake/YumYumYard",
-      deployment: "https://yums-4103a315e67a.herokuapp.com/",
-      info: "Yum's is a restaurant management system. Technologies used include Node.js, Express.js, MongoDB, and EJS templating.",
+      github: "https://github.com/zamorejake/Yums",
+      deployment: "https://yums2-3c8c929ea654.herokuapp.com/",
+      info: "Yum's is a restaurant management system built using React, Node.js, Express.js, and MongoDB.",
     },
     {
-      image: "weather.png",
-      title: "Weather App",
-      github: "https://github.com/zamorejake/06-weather-dashboard",
-      deployment: "https://zamorejake.github.io/06-weather-dashboard/",
-      info: "A weather dashboard that provides current weather conditions and forecasts. Built with HTML, CSS, JavaScript, and utilizes the OpenWeatherMap API.",
+      image: "blog.png",
+      title: "Tech Blog",
+      github: "https://github.com/zamorejake/14-MVC-techblog",
+      deployment: "#",
+      info: "A blog application using the Model-View-Controller (MVC) pattern for managing and presenting technical blog posts.",
     },
     {
-      image: "park.jpg",
-      title: "Park Locator",
-      github: "https://github.com/zamorejake/US-ParkLocator",
-      deployment: "https://zamorejake.github.io/US-ParkLocator/",
-      info: "Park Locator helps users find information about parks in the United States. Developed using HTML, CSS, JavaScript, and the National Park Service API.",
+      image: "employee.png",
+      title: "Employee App",
+      github: "https://github.com/zamorejake/12-EmployeeSQL",
+      deployment: "#",
+      info: "An Employee Management App using SQL for data storage and manipulation.",
     },
     {
-      image: "calendar.png",
-      title: "Calendar App",
-      github: "https://github.com/zamorejake/05-dayJS-calendar",
-      deployment: "https://zamorejake.github.io/05-dayJS-calendar/",
-      info: "A simple calendar app with day planning features. Built using HTML, CSS, JavaScript, and the Day.js library.",
+      image: "nosql.png",
+      title: "Social API",
+      github: "https://github.com/zamorejake/18-NoSQL-SocialAPI",
+      deployment: "https://www.youtube.com/watch?v=xYNdVIU07TE&ab_channel=JZ",
+      info: "A NoSQL Social API to store all info related to the users credentials and posts they made including reactions. Technologies include MongoDB.",
     },
     {
-      image: "password.png",
-      title: "Password Generator",
-      github: "https://github.com/zamorejake/03-passwordGenerator",
-      deployment: "https://zamorejake.github.io/03-passwordGenerator/",
-      info: "Password Generator creates secure passwords with customizable options. Implemented using HTML, CSS, and JavaScript.",
+      image: "book.png",
+      title: "Book Finder",
+      github: "https://github.com/zamorejake/21-BookSearch",
+      deployment: "https://book-engine-mern-21-5febe54c7a0c.herokuapp.com/",
+      info: "This project leverages GraphQL, React, Apollo, and MongoDB to create a platform for discovering and searching for books.",
     },
     {
-      image: "quiz.png",
-      title: "Quiz App",
-      github: "https://github.com/zamorejake/04-JSquiz",
-      deployment: "https://zamorejake.github.io/04-JSquiz/",
-      info: "A JavaScript quiz application with multiple-choice questions. Developed with HTML, CSS, and JavaScript.",
+      image: "portfolio.png",
+      title: "Portfolio",
+      github: "https://github.com/zamorejake/React-Portfolio-20",
+      deployment: "https://jakezam.dev/",
+      info: "My portfolio website built with React and Tailwind to showcase my projects, good Github practices, and contact info.",
     },
   ];
 
