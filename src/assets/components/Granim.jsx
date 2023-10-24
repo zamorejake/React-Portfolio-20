@@ -1,4 +1,3 @@
-// GranimBackground.jsx
 import React, { useEffect, useRef } from "react";
 import Granim from "granim";
 

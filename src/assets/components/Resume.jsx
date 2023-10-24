@@ -2,10 +2,6 @@ import React, { useState } from "react";
 const Resume = () => {
   const [hovered, setHovered] = useState(false);
 
-  const handleEnter = (index) => {
-    setHovered(index);
-  };
-
   const handleLeave = () => {
     setHovered(false);
   };
