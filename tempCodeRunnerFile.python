@@ -1,7 +1,0 @@
-txt = input("Type sentence here: ")
-og = input("What word to replace?: ")
-new = input("Replace with what word?: ")
-
-x = txt.replace(og,new)
-
-print(x)
