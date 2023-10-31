@@ -1,14 +1,7 @@
-import random
+txt = input("Type sentence here: ")
+og = input("What word to replace?: ")
+new = input("Replace with what word?: ")
 
-print("I've thought of a number from 1 through 100.")
-userNum = int(input("Guess the number: "))
-randomNum = random.randrange(1,100)
-print(randomNum)
-guess = 1
+x = txt.replace(og,new)
 
-while userNum != randomNum:
-    print("Correct. You took",guess,"guesses" if userNum == randomNum else "Too low" if userNum < randomNum else "Too high")
-    guess += 1
-    userNum = int(input("Try again: "))
-    
-print("Correct. You took",guess,"guesses")
+print(x)

@@ -5,6 +5,8 @@ const Resume = () => {
   const handleLeave = () => {
     setHovered(false);
   };
+  const isGrid = window.innerWidth >= 768;
+
   const logoData = [
     {
       image: "icons/html.png",
@@ -48,7 +50,7 @@ const Resume = () => {
         <iframe
           className="pt-5"
           src="Resume.pdf"
-          width="600"
+          width={isGrid ? "600" : "400"}
           height="630"
         ></iframe>
         <h1 className="text-black text-bold font-bold text-4xl pt-28 drop-shadow-[0_2px_2px_rgba(255,255,255,0.8)]">Technical Skills</h1>
