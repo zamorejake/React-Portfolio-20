@@ -1,0 +1,14 @@
+import random
+
+print("I've thought of a number from 1 through 100.")
+userNum = int(input("Guess the number: "))
+randomNum = random.randrange(1,100)
+print(randomNum)
+guess = 1
+
+while userNum != randomNum:
+    print("Correct. You took",guess,"guesses" if userNum == randomNum else "Too low" if userNum < randomNum else "Too high")
+    guess += 1
+    userNum = int(input("Try again: "))
+    
+print("Correct. You took",guess,"guesses")
