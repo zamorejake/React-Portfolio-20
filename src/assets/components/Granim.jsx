@@ -14,8 +14,8 @@ const GranimBackground = ({ activeState, onStateChange }) => {
       states: {
         "default-state": {
           gradients: [
-            ["#FF4E50", "#FDDC43"],
-            ["#DA953F", "#F80851"],
+            ["#FF4E50", "#F9D423"],
+            ["#9D50BB", "#6E48AA"],
           ],
           transitionSpeed: 9000,
         },
