@@ -9,12 +9,28 @@ const Resume = () => {
 
   const logoData = [
     {
-      image: "icons/html.png",
-      alt: "HTML Logo",
+      image: "icons/react.png",
+      alt: "React Logo",
     },
     {
-      image: "icons/css.png",
-      alt: "CSS Logo",
+      image: "icons/type_script.png",
+      alt: "TypeScript Logo",
+    },
+    {
+      image: "icons/jest.png",
+      alt: "Jest Logo",
+    },
+    {
+      image: "icons/python.png",
+      alt: "Python Logo",
+    },
+    {
+      image: "icons/mysql.png",
+      alt: "MySQL Logo",
+    },
+    {
+      image: "icons/mongo.png",
+      alt: "MongoDB Logo",
     },
     {
       image: "icons/js.png",
@@ -25,16 +41,16 @@ const Resume = () => {
       alt: "Node.js Logo",
     },
     {
-      image: "icons/react.png",
-      alt: "React Logo",
+      image: "icons/html.png",
+      alt: "HTML Logo",
     },
     {
-      image: "icons/mysql.png",
-      alt: "MySQL Logo",
+      image: "icons/css.png",
+      alt: "CSS Logo",
     },
     {
-      image: "icons/mongo.png",
-      alt: "MongoDB Logo",
+      image: "icons/tailwind.png",
+      alt: "Tailwind CSS Logo",
     },
     {
       image: "icons/express.png",
@@ -51,7 +67,7 @@ const Resume = () => {
           className="pt-5"
           src="Resume.pdf"
           width={isGrid ? "600" : "400"}
-          height="630"
+          height="830"
         ></iframe>
         <h1 className="text-black text-bold font-bold text-4xl pt-28 drop-shadow-[0_2px_2px_rgba(255,255,255,0.8)]">Technical Skills</h1>
         <div className="grid grid-cols-4 gap-2.5 pb-12">
